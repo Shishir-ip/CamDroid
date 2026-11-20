@@ -11,8 +11,9 @@ Use every camera on your phone (ultra-wide, main, tele, front) as a system-wide 
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D6?style=flat-square&logo=windows)](https://github.com/Shishir-ip/CamDroid/releases/latest)
 [![Android](https://img.shields.io/badge/Android-9.0%2B-3DDC84?style=flat-square&logo=android)](https://github.com/Shishir-ip/CamDroid/releases/latest)
 [![Stars](https://img.shields.io/github/stars/Shishir-ip/CamDroid?style=flat-square)](https://github.com/Shishir-ip/CamDroid/stargazers)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fshishir-ip.github.io%2FCamDroid%2F&style=flat-square&label=website)](https://shishir-ip.github.io/CamDroid/)
 
-[**Download**](https://github.com/Shishir-ip/CamDroid/releases/latest) · [Features](#features) · [Quick start](#quick-start) · [Screenshots](#screenshots) · [Build from source](#build-from-source) · [FAQ](#faq)
+[**Website**](https://shishir-ip.github.io/CamDroid/) · [**Download**](https://github.com/Shishir-ip/CamDroid/releases/latest) · [Features](#features) · [Quick start](#quick-start) · [Screenshots](#screenshots) · [Build from source](#build-from-source) · [FAQ](#faq)
 
 </div>
 
