@@ -1,0 +1,67 @@
+# Private signing material and machine-specific configuration
+**/local.properties
+**/keystore.properties
+**/signing.properties
+**/*keystore*.properties
+**/*signing*.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# Android / Gradle outputs and caches
+.gradle/
+.kotlin/
+**/build/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.apks
+*.dex
+
+# Node / Electron generated dependencies and outputs
+node_modules/
+/windows/dist/
+/windows/out/
+/windows/release/
+/deliverables/
+*.exe
+*.msi
+*.msix
+*.blockmap
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Native build artifacts (sources + build.bat are tracked; DLLs ship in windows/vendor)
+windows/native/vcam/obj/
+*.obj
+*.exp
+*.ilk
+*.pdb
+
+# Vendored runtime binaries (adb, MediaPipe models, virtual-camera DLLs) ARE tracked
+# so a fresh clone can build a working installer. Provenance: windows/vendor/README.md
+!windows/vendor/
+!windows/vendor/**
+
+# IDE / OS / runtime files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
+*.bak
+coverage/
+settings.json
+
+# Keep source build configuration, lockfiles and Gradle wrapper tracked.

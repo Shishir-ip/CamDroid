@@ -1,0 +1,34 @@
+appId: com.shishir.camdroid
+productName: CamDroid
+copyright: Designed & built by Shishir
+directories:
+  output: ../../deliverables/windows
+  buildResources: assets
+files:
+  - src/main/**/*
+  - dist/renderer/**/*
+  - package.json
+  - assets/*.png
+asar: true
+asarUnpack:
+  - node_modules/koffi/**
+npmRebuild: false
+extraResources:
+  - from: vendor/adb
+    to: vendor/adb
+  - from: vendor/softcam
+    to: vendor/softcam
+  - from: vendor/vcam
+    to: vendor/vcam
+win:
+  target: nsis
+  icon: assets/icon.ico
+  artifactName: CamDroid-Setup-${version}.exe
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: CamDroid
+  deleteAppDataOnUninstall: false
