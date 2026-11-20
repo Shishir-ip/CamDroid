@@ -306,7 +306,11 @@ export class GlPipeline {
     gl.uniform1f(u.uGrain, fx.grain);
     gl.uniform1f(u.uTime, (performance.now() - this.startTime) / 1000);
     gl.uniform1f(u.uBypass, pipeline.bypass ? 1 : 0);
-    gl.uniform1f(u.uFlipY, 0);
+    // ImageBitmap uploads ignore UNPACK_FLIP_Y_WEBGL on this Chromium, so the
+    // texture arrives top-down (v=0 = image top). Flip sampling here so the
+    // on-screen preview is upright; readRgba()'s CPU flip then yields a
+    // top-down upright buffer for the virtual camera, recordings and snapshots.
+    gl.uniform1f(u.uFlipY, 1);
 
     gl.drawArrays(gl.TRIANGLES, 0, 3);
   }
